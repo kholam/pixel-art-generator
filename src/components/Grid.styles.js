@@ -3,13 +3,18 @@ import { createUseStyles } from 'react-jss';
 export default createUseStyles({
   grid: {
     display: 'grid',
-    gridTemplateRows: 'repeat(5, 1fr)',
-    gridTemplateColumns: 'repeat(8, 1fr)',
-    width: '80vw',
-    height: '50vw',
-    border: '2px solid black',
+    gridTemplateRows: 'repeat(40, 1fr)',
+    gridTemplateColumns: 'repeat(64, 1fr)',
+    width: '100vmin',
+    height: '70vmin',
+    outline: '2px solid black',
   },
   cell: {
     border: '2px solid black',
+    cursor: 'pointer',
+    background: '#fff',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    }
   },
 });
